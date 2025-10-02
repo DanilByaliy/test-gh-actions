@@ -1,0 +1,76 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.header {
+  color: $whiteColor;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+  &__wrapper {
+    background-color: $primaryColor;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+  }
+
+  &__container {
+  }
+
+  &__body {
+    min-height: 92px;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    @media (max-width: $md3+px) {
+      min-height: 60px;
+    }
+  }
+
+  &__main {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 20px;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    font-size: 28px;
+    font-weight: 600;
+    position: relative;
+    z-index: 5;
+
+    &::before {
+      font-weight: normal;
+    }
+  }
+
+  &__menu {
+  }
+
+  &__actions {
+    flex-shrink: 0;
+    @include adaptiveValue("margin-left", 60, 18, 1152);
+  }
+
+  &__login {
+  }
+
+  &__try {
+  }
+}
+
+.actions-header {
+  display: flex;
+  column-gap: 24px;
+  position: relative;
+  z-index: 5;
+}

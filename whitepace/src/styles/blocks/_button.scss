@@ -1,0 +1,31 @@
+@use "../variables" as *;
+
+.button {
+  padding-block: 20px;
+  padding-left: 24px;
+  padding-right: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  background-color: $accentColor;
+  border-radius: 8px;
+
+  &::after {
+    content: "\e900";
+    font-family: "icons";
+    font-size: 10px;
+    display: block;
+    margin-left: 10px;
+  }
+
+  &_login {
+    padding-inline: 40px;
+    color: $primaryColor;
+    background-color: $secondaryColor;
+
+    &::after {
+      display: none;
+    }
+  }
+}
