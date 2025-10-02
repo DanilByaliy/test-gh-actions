@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="/src/main.js" defer></script>
+    <title>Honey shop</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner container">
+        <a href="#" class="header__logo">
+          <img
+            class="header__logo-image"
+            src="./src/images/icons/logo.png"
+            alt="Mellifera"
+            width="234"
+            height="48"
+            loading="lazy"
+          />
+        </a>
+        <div class="header__burger" data-da=".header__inner, 768, last">
+          <span></span>
+        </div>
+        <nav class="header__menu">
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link header__menu-link--active">
+                Home
+              </a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">Pages</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">Products</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">Blog</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">Portfolio</a>
+            </li>
+            <li class="header__menu-item header__menu-item--contact"></li>
+          </ul>
+        </nav>
+        <div class="header__actions">
+          <a href="#" class="header__cart">
+            <img
+              src="./src/images/icons/cart.svg"
+              alt="Cart"
+              width="21"
+              height="18"
+              loading="lazy"
+            />
+          </a>
+          <button
+            class="header__button button"
+            type="button"
+            data-da=".header__menu-item--contact, 768, last"
+          >
+            Contact
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="content">
+      <section class="welcome">
+        <div class="welcome__inner container">
+          <div class="welcome__body">
+            <p class="welcome__credo">FRESH & SWEET AS HONEY.</p>
+            <h1 class="welcome__title">HONEYBEE</h1>
+            <p class="welcome__description">
+              Lorem ipsum dolor sit amet, sint nostrum mea ut, vel semper
+              vidisse eu usu temporibus disputationi voluptatibus in ei est
+              possit salutandi abhorrea acusa
+            </p>
+            <a href="#" class="welcome__button button">View More</a>
+          </div>
+          <div class="welcome__image-wrapper">
+            <img class="welcome__image" src="./src/images/welcome/hero.png" />
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
